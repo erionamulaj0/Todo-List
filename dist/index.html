@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yusei+Magic&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <i class="fas fa-check-double"></i>
+        <h1 class="page-name">Todo List</h1>
+      </div>
+      <button class="button-open-nav" id="button-open-nav">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+    <main class="main">
+      <nav class="nav" id="nav">
+        
+        <div class="default-projects-list">
+          <button class="button-default-project" id="button-inbox-projects">
+            <i class="fas fa-inbox"></i>
+            Inbox
+          </button>
+          <button class="button-default-project" id="button-today-projects">
+            <i class="fas fa-calendar-day"></i>
+            Sot
+          </button>
+          <button class="button-default-project" id="button-week-projects">
+            <i class="fas fa-calendar-week"></i>
+            Ketë Javë
+          </button>
+        </div>
+        
+        <h1 class="projects-title">Projektet</h1>
+        <div class="projects-list" id="projects-list"></div>
+        <button class="button-add-project" id="button-add-project">
+          <i class="fas fa-plus"></i>
+          Shto Projekt te ri
+        </button>
+        <div class="add-project-popup" id="add-project-popup">
+          <input
+            class="input-add-project-popup"
+            id="input-add-project-popup"
+            type="text"
+          />
+          <div class="add-project-popup-buttons">
+            <button
+              class="button-add-project-popup"
+              id="button-add-project-popup"
+            >
+              Shto
+            </button>
+            <button
+              class="button-cancel-project-popup"
+              id="button-cancel-project-popup"
+            >
+              Anulo
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="project-preview" id="project-preview"></div>
+    </main>
+    <footer class="footer">
+      <p>Copyright © 2022 EM</p>
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
+  </body>
+</html>
